@@ -13,14 +13,14 @@ class UserSeeder extends Seeder
     public function run()
     {
         $data['privilege'] = 1;
-        $data['name'] = 'admin';
+        $data['first_name'] = 'admin';
         $data['username'] = 'admin';
         $data['email'] = 'admin@admin.com';
         $data['password'] = bcrypt('admin002');
         $data['image'] = 'userseed.png';
 
         $data2['privilege'] = 2;
-        $data2['name'] = 'User';
+        $data2['first_name'] = 'User';
         $data2['username'] = 'user';
         $data2['email'] = 'User@user.com';
         $data2['password'] = bcrypt('user002');

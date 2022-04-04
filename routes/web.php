@@ -1,4 +1,10 @@
 <?php
+Route::get('clear', function () {
+	Artisan::call('cache:clear');
+	Artisan::call('config:clear');
+	Artisan::call('config:cache');
+    return back();
+});
 Route::group(['namespace' => 'Backend'], function () {
     Route::any('/', 'AdminController@login')->name('login');
 });
